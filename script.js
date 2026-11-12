@@ -1,10 +1,10 @@
 
-// GET NAVIGATION ELEMENTS
+
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
 
-// MOBILE NAVIGATION MENU
+
 menuToggle.addEventListener("click", () => {
 
     const isOpen = navLinks.classList.toggle("open");
@@ -16,7 +16,7 @@ menuToggle.addEventListener("click", () => {
 });
 
 
-// CLOSE MENU AFTER CLICKING A LINK
+
 document.querySelectorAll(".nav-links a").forEach((link) => {
 
     link.addEventListener("click", () => {
@@ -32,7 +32,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 });
 
 
-// HIGHLIGHT ACTIVE NAVIGATION SECTION
+
 const sections = document.querySelectorAll("main section[id]");
 const navItems = document.querySelectorAll(".nav-links a");
 
@@ -66,6 +66,6 @@ sections.forEach((section) => {
 });
 
 
-// AUTOMATIC CURRENT YEAR IN FOOTER
+
 document.getElementById("year").textContent =
     new Date().getFullYear();
