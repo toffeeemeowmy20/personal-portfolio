@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio website">
+    <title>My Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                My<span>Portfolio.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    
+    <section id="home" class="hero">
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>
+                    Hello, I'm
+                    <span>Divina Grace Martin</span>
+                </h1>
+
+                <h2>IT Student & Aspiring Developer</h2>
+
+                <p class="hero-description">
+                    I am an Information Technology student who enjoys
+                    learning about technology, creating useful applications,
+                    and improving my development skills.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View My Projects
+                    </a>
+
+                    <a href="#about" class="btn secondary-btn">
+                        More About Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-decoration"></div>
+
+                <img src="profile.jpg"
+                     alt="My Profile Picture"
+                     onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='grid';">
+
+                <div class="photo-fallback" id="photoFallback">
+                    Add your<br>profile.jpg
+                </div>
+
+                <div class="floating-note">
+                    Learning • Creating • Growing
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#about" class="scroll-down">
+            SCROLL TO EXPLORE ↓
+        </a>
+
+    </section>
+
+
+    
+    <section id="about" class="section">
+
+        <div class="container narrow">
+
+            <p class="eyebrow">GET TO KNOW ME</p>
+
+            <h2 class="section-title">
+                About <span>Me</span>
+            </h2>
+
+            <div class="about-card">
+
+                <p>
+                    Hi! I'm <strong>Divina Grace Martin </strong>, an Information
+                    Technology student at
+                    <strong>La Consolacion University of the Philippines</strong>.
+                    I am building my knowledge in programming,
+                    application development, and web technologies.
+                </p>
+
+                <p>
+                    I enjoy exploring how technology can solve
+                    everyday problems. Through school activities
+                    and projects, I continue to develop my technical
+                    abilities, creativity, and problem-solving skills.
+                </p>
+
+                <p>
+                    <strong>My Goal:</strong>
+                    To keep learning and become a capable IT
+                    professional who can create meaningful and
+                    user-friendly digital solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="skills" class="section soft-section">
+
+        <div class="container">
+
+            <p class="eyebrow">WHAT I WORK WITH</p>
+
+            <h2 class="section-title">
+                My <span>Skills</span>
+            </h2>
+
+            <p class="section-intro">
+                A growing set of technical skills that I continue
+                to practice and improve.
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">⌘</div>
+                    <h3>HTML</h3>
+                    <p>Structuring web pages and content.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">✦</div>
+                    <h3>CSS</h3>
+                    <p>Styling layouts and responsive designs.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Adding interaction to websites.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">▣</div>
+                    <h3>Application Development</h3>
+                    <p>Creating and exploring application features.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">▤</div>
+                    <h3>Microsoft Excel</h3>
+                    <p>Working with spreadsheets and data.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">▥</div>
+                    <h3>Microsoft Access</h3>
+                    <p>Learning database fundamentals.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+
+            <h2 class="section-title">
+                My <span>Projects</span>
+            </h2>
+
+            <p class="section-intro">
+                Here are three of my application development projects.
+            </p>
+
+            <div class="projects-grid">
+
+                
+                <div class="project-card">
+
+                    <img src="pethealthtracker.png"
+                         alt="Pet Health Tracker Project">
+
+                    <div class="project-info">
+
+                        <span class="project-type">
+                            APP DEVELOPMENT
+                        </span>
+
+                        <h3>Pet Health Tracker</h3>
+
+                        <p>
+                            A project focused on helping users keep
+                            track of important pet health information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                
+                <div class="project-card">
+
+                    <img src="intent.jpg"
+                         alt="Intent Project">
+
+                    <div class="project-info">
+
+                        <span class="project-type">
+                            APP DEVELOPMENT
+                        </span>
+
+                        <h3>Intent</h3>
+
+                        <p>
+                            An application development project
+                            created as part of my learning activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                
+                <div class="project-card">
+
+                    <img src="toast.jpg"
+                         alt="Toast Project">
+
+                    <div class="project-info">
+
+                        <span class="project-type">
+                            APP DEVELOPMENT
+                        </span>
+
+                        <h3>Toast</h3>
+
+                        <p>
+                            An application development project
+                            demonstrating concepts practiced in class.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="small-note">
+                Replace the descriptions with the actual features
+                and purposes of your projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="achievements" class="section soft-section">
+
+        <div class="container narrow">
+
+            <p class="eyebrow">MILESTONES & LEARNING</p>
+
+            <h2 class="section-title">
+                My <span>Achievements</span>
+            </h2>
+
+            <div class="achievement-list">
+
+                
+                <div class="achievement-card">
+
+                    <div class="achievement-icon">✓</div>
+
+                    <div>
+                        <span class="achievement-label">
+                            MICROSOFT CERTIFICATION
+                        </span>
+
+                        <h3>
+                            Microsoft Office Specialist: Excel 2019
+                        </h3>
+
+                        <p>
+                            Certification achievement in
+                            Microsoft Excel 2019.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                
+                <div class="achievement-card">
+
+                    <div class="achievement-icon">✓</div>
+
+                    <div>
+                        <span class="achievement-label">
+                            MICROSOFT CERTIFICATION
+                        </span>
+
+                        <h3>
+                            Microsoft Office Specialist:
+                            Access 2019 
+                        </h3>
+
+                        <p>
+                            Certification achievement in
+                            Microsoft Access 2019
+                        </p>
+                    </div>
+
+                </div>
+
+
+                
+                <div class="achievement-card">
+
+                    <div class="achievement-icon">✓</div>
+
+                    <div>
+                        <span class="achievement-label">
+                            CYBERSECURITY
+                        </span>
+
+                        <h3>Fundamentals of Cybersecurity</h3>
+
+                        <p>
+                            Cybersecurity learning or certification
+                            achievement through CloudSwyft.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="contact" class="section contact-section">
+
+        <div class="container narrow contact-content">
+
+            <p class="eyebrow">LET'S CONNECT</p>
+
+            <h2 class="section-title">
+                Contact <span>Me</span>
+            </h2>
+
+            <p>
+                If you would like to reach me, you can contact
+                me through my email address:
+            </p>
+
+            <a href="mailto:your.email@example.com"
+               class="email-link">
+                divinagrace0912@gmail.com
+            </a>
+
+        </div>
+
+    </section>
+
+
+    
+    <footer class="footer">
+
+        <p>
+            © <span id="year"></span> Your Name.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
